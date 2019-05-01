@@ -15,7 +15,7 @@ class MainTabBarController: UITabBarController {
         // Do any additional setup after loading the view.
         
         let layout = UICollectionViewFlowLayout()
-        let userProController = UserProController(collectionViewLayout: layout)
+        let userProController = UserProHeaderController(collectionViewLayout: layout)
         let navController = UINavigationController(rootViewController: userProController)
         
         navController.tabBarItem.image = UIImage(named: "profile_unselected")

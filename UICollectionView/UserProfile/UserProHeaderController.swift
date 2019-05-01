@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserProController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class UserProHeaderController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
    
     
     override func viewDidLoad() {
@@ -17,12 +17,12 @@ class UserProController: UICollectionViewController, UICollectionViewDelegateFlo
         collectionView?.backgroundColor = .white
         topNavigationBar()
         
-        collectionView?.register(UICollectionViewCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerId")
+        collectionView?.register(UserProHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerId")
         
     }
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerId", for: indexPath)
-        header.backgroundColor = UIColor.blue
+        //header.backgroundColor = UIColor.blue
         
         return header
         
