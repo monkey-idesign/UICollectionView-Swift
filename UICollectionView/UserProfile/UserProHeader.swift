@@ -9,10 +9,22 @@
 import UIKit
 
 class UserProHeader: UICollectionViewCell {
+    
+    //adding user profile image view
+    let profileImageView: UIImageView = {
+        
+        let iv = UIImageView()
+        iv.backgroundColor = .red
+        return iv
+        
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         backgroundColor = .green
+        
+        addSubview(profileImageView)
     }
     
     required init?(coder aDecoder: NSCoder) {

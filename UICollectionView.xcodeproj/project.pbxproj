@@ -16,6 +16,7 @@
 		185B58B72277311700FA6BE1 /* UITabBarControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B58B62277311700FA6BE1 /* UITabBarControllerUITests.swift */; };
 		185B58C5227737BD00FA6BE1 /* UserProHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185B58C4227737BD00FA6BE1 /* UserProHeaderController.swift */; };
 		18626CDA227980EB009E926B /* UserProHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18626CD9227980EB009E926B /* UserProHeader.swift */; };
+		18626CDD227984B9009E926B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18626CDC227984B9009E926B /* Extensions.swift */; };
 		18A5FF3D2278065100C62B99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A5FF3C2278065100C62B99 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		185B58B82277311700FA6BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		185B58C4227737BD00FA6BE1 /* UserProHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProHeaderController.swift; sourceTree = "<group>"; };
 		18626CD9227980EB009E926B /* UserProHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProHeader.swift; sourceTree = "<group>"; };
+		18626CDC227984B9009E926B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		18A5FF3C2278065100C62B99 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 		185B58952277311600FA6BE1 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				18626CDB22798482009E926B /* Extensions  */,
 				18A5FF3E227822CF00C62B99 /* UserProfile */,
 				185B58962277311600FA6BE1 /* AppDelegate.swift */,
 				185B58982277311600FA6BE1 /* MainTabBarController.swift */,
@@ -131,6 +134,14 @@
 				185B58B82277311700FA6BE1 /* Info.plist */,
 			);
 			path = UITabBarControllerUITests;
+			sourceTree = "<group>";
+		};
+		18626CDB22798482009E926B /* Extensions  */ = {
+			isa = PBXGroup;
+			children = (
+				18626CDC227984B9009E926B /* Extensions.swift */,
+			);
+			path = "Extensions ";
 			sourceTree = "<group>";
 		};
 		18A5FF3E227822CF00C62B99 /* UserProfile */ = {
@@ -274,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18626CDD227984B9009E926B /* Extensions.swift in Sources */,
 				185B58992277311600FA6BE1 /* MainTabBarController.swift in Sources */,
 				185B58C5227737BD00FA6BE1 /* UserProHeaderController.swift in Sources */,
 				185B58972277311600FA6BE1 /* AppDelegate.swift in Sources */,
