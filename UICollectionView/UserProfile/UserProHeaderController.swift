@@ -43,6 +43,12 @@ class UserProHeaderController: UICollectionViewController, UICollectionViewDeleg
         
         return cell
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let width = view.frame.width
+        
+        return CGSize(width: width, height: view.frame.height / 4)
+    }
     
     fileprivate func topNavigationBar() {
         
