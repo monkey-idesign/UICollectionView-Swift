@@ -16,9 +16,10 @@ class UserProHeader: UICollectionViewCell {
         let iv = UIImageView()
         iv.backgroundColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.8)
         
-        iv.image = UIImage(named: "profile_selected")
+        iv.image = UIImage(named: "reaksa-lorry")
         iv.clipsToBounds = true
         iv.layer.cornerRadius = 10
+        iv.contentMode = .scaleAspectFill
         //iv.layer.cornerRadius = 60 / 2
     
         return iv
