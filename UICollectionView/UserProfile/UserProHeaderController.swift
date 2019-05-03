@@ -39,7 +39,7 @@ class UserProHeaderController: UICollectionViewController, UICollectionViewDeleg
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-        cell.backgroundColor = .green
+        cell.backgroundColor = .blue
         
         return cell
     }
@@ -48,6 +48,9 @@ class UserProHeaderController: UICollectionViewController, UICollectionViewDeleg
         let width = view.frame.width
         
         return CGSize(width: width, height: view.frame.height / 4)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
     }
     
     fileprivate func topNavigationBar() {
