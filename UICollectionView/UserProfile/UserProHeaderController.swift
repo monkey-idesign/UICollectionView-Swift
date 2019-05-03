@@ -10,6 +10,7 @@ import UIKit
 
 class UserProHeaderController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
    
+    let cellId = "cellId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
