@@ -19,6 +19,7 @@ class UserProHeaderController: UICollectionViewController, UICollectionViewDeleg
         topNavigationBar()
         
         collectionView?.register(UserProHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerId")
+        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         
     }
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -38,6 +39,7 @@ class UserProHeaderController: UICollectionViewController, UICollectionViewDeleg
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        cell.backgroundColor = .green
         
         return cell
     }
